@@ -29,11 +29,11 @@ export function ChatIA() {
           </div>
 
           <div className="acoes">
-            <a href="" target="_blank" rel="noopener noreferrer" className="btn-demo">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="btn-demo">
               Ver Demo
             </a>
 
-            <a href="" target="_blank" rel="noopener noreferrer" className="btn-github">
+            <a href="https://github.com/Kawasanchezz/ChatIA" target="_blank" rel="noopener noreferrer" className="btn-github">
               GitHub
             </a>
           </div>

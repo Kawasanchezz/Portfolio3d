@@ -27,7 +27,7 @@ export function AppDieta() {
 
                     <div className="acoes">
 
-                        <a href="" target="_blank" rel="noopener noreferrer" className="btn-github">
+                        <a href="https://github.com/Kawasanchezz/metafit-app-react-native" target="_blank" rel="noopener noreferrer" className="btn-github">
                             GitHub
                         </a>
                     </div>
