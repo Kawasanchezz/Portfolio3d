@@ -63,18 +63,12 @@ Seguindo padrões de nível industrial, a aplicação conta com:
 
 Certifique-se de ter o **Node.js 18+** instalado em sua máquina.
 
-1. **Obtenha o código**
-   ```bash
-   git clone https://github.com/seu-usuario/portfolio3d.git
-   cd portfolio3d
-   ```
-
-2. **Instale as dependências**
+1. **Instale as dependências**
    ```bash
    npm install
    ```
 
-3. **Inicie o servidor de desenvolvimento**
+2. **Inicie o servidor de desenvolvimento**
    ```bash
    npm run dev
    ```
