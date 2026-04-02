@@ -11,7 +11,8 @@ O objetivo é unir **web moderna + gráficos 3D + interatividade**, criando uma 
 
 > O usuário controla um personagem em terceira pessoa e explora o ambiente usando teclado (W, A, S, D) ou joystick virtual no mobile.
 
-![Preview do Portfolio 3D](https://arturferreira.com/imgs/imgsProjetos/portfolio3D.png)
+<img width="1912" height="965" alt="image" src="https://github.com/user-attachments/assets/8ea3b1f6-126a-410d-96c2-93a2bf58a109" />
+
 
 ---
 
