@@ -18,11 +18,7 @@ import { DetectGpu } from './components/DetectGpu'
 import { Bloom, EffectComposer } from '@react-three/postprocessing'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Projeto } from './projetosPortfolio/Projetos'
-import { ChatIA } from './projetosPortfolio/ChatIA'
 import { TerrainPlane } from './Mapa'
-import { LojaDeOculos } from './projetosPortfolio/LojaDeOculos'
-import { AppDieta } from './projetosPortfolio/AppDieta'
-import { RedeSocial } from './projetosPortfolio/RedeSocial'
 
 
 
@@ -148,10 +144,6 @@ function App() {
           <Routes>
             <Route element={<MenuProjetos fechar={() => setProjetosIsOpen(false)}/>}>
               <Route path='/' element={<Projeto />} />
-              <Route path='/chat-ia' element={<ChatIA />} />
-              <Route path='/loja-de-oculos' element={<LojaDeOculos />} />
-              <Route path='/app-dieta' element={<AppDieta />} />
-              <Route path='/rede-social' element={<RedeSocial />} />
             </Route>
           </Routes>
         }
