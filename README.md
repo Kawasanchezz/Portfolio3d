@@ -65,7 +65,7 @@ Certifique-se de ter o **Node.js 18+** instalado em sua máquina.
 
 1. **Obtenha o código**
    ```bash
-   git clone https://github.com/Kawasanchezz/Portfolio3d.git
+   git clone https://github.com/seu-usuario/portfolio3d.git
    cd portfolio3d
    ```
 
