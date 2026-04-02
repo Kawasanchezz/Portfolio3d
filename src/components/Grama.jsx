@@ -67,6 +67,7 @@ export function Grama({ count = 1200, position = [], larg = [] }) {
     }), [])
 
     useFrame((state) => {
+        if (!meshRef.current) return;
         meshRef.current.material.uniforms.uTime.value = state.clock.elapsedTime
     })
 

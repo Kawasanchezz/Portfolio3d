@@ -1,4 +1,4 @@
-import LojaDeOculos from "../assets/imgs/LojaDeOculos.png"
+// import LojaDeOculos from "../assets/imgs/LojaDeOculos.png"
 
 export function Projeto(){
     return(

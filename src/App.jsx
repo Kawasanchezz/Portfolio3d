@@ -2,7 +2,7 @@ import { KeyboardControls, OrbitControls, PerformanceMonitor, Text3D } from '@re
 import { Canvas } from '@react-three/fiber'
 import './App.css'
 import { CuboidCollider, Physics, RigidBody } from '@react-three/rapier'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { Grama } from './components/Grama'
 import { MobileControls } from './components/MobileControls'
 import { MagicMissionCircle } from './components/CirculoMagico'
@@ -92,8 +92,8 @@ function App() {
   const [sobreIsOpen, setSobreIsOpen] = useState(false);
   const [projetosIsOpen, setProjetosIsOpen] = useState(false);
   const [contatoIsOpen, setContatoIsOpen] = useState(false);
-  const [quality, setQuality] = useState(null);
-  const preset = quality ? presets[quality] : presets.low
+  const [quality, setQuality] = useState("low");
+  const preset = presets[quality]
   const magicSound = useRef();
 
 
@@ -155,16 +155,15 @@ function App() {
         </div>
         <KeyboardControls map={map}>
           {started && <MobileControls />}
-          {quality && (
-            <Canvas
-              shadows={preset.shadows}
-              dpr={preset.dpr}
-            >
-              <PerformanceMonitor
-                onDecline={() => {
-                  setQuality("low")
-                }}
-              />
+          <Canvas
+            shadows={preset.shadows}
+            dpr={preset.dpr}
+          >
+            <PerformanceMonitor
+              onDecline={() => {
+                setQuality("low")
+              }}
+            />
               <color attach="background" args={['#3debe2']} />
               <ambientLight intensity={1.5} />
               <directionalLight
@@ -188,8 +187,9 @@ function App() {
               )}
 
 
-              <Physics>
-                <Player />
+              <Suspense fallback={null}>
+                <Physics>
+                  <Player />
                 <RigidBody type="fixed" colliders={false} position={[-6, 0, -3]}>
                   <CuboidCollider
                     args={[1, 1, 1]}
@@ -283,10 +283,10 @@ function App() {
                 <MagicMissionCircle position={[-6.1, 0.05, -2.5]} />
                 <MagicMissionCircle position={[4.5, 0.05, -1.2]} />
                 <MagicMissionCircle position={[2, 0.05, 7]} />
-              </Physics>
+                </Physics>
+              </Suspense>
               {/* <OrbitControls /> */}
-            </Canvas>
-          )}
+          </Canvas>
         </KeyboardControls>
       </div >
     </BrowserRouter>

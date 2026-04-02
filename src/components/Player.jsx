@@ -42,6 +42,7 @@ export function Player() {
   const movingRef = useRef(false);
 
   useFrame((state) => {
+    if (!rb.current) return;
 
     const keyboard = get();
     const forward = keyboard.forward || mobileControls.forward;

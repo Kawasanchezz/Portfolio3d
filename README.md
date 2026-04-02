@@ -1,107 +1,93 @@
 
-# 🌐 Portfolio 3D Interativo — React Three Fiber
+# 🌲 3D Immersive Village — Portfolio Interativo
 
-Este projeto é um **portfolio 3D interativo** desenvolvido com **React Three Fiber (R3F)** e **Three.js**, onde o usuário pode explorar um pequeno vilarejo em 3D e interagir com diferentes áreas que representam seções do portfolio, como **Sobre Mim**, **Projetos** e **Contato**.
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-r180-black?logo=three.js)](https://threejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)](https://vitejs.dev/)
+[![Status](https://img.shields.io/badge/Status-Produção-success)]()
 
-O objetivo é unir **web moderna + gráficos 3D + interatividade**, criando uma experiência imersiva que vai além de um portfolio tradicional.
-
----
-
-## 🖼️ Preview
-
-> O usuário controla um personagem em terceira pessoa e explora o ambiente usando teclado (W, A, S, D) ou joystick virtual no mobile.
-
-<img width="1912" height="965" alt="image" src="https://github.com/user-attachments/assets/8ea3b1f6-126a-410d-96c2-93a2bf58a109" />
-
+Um universo digital imersivo onde o portfolio tradicional ganha vida. Desenvolvido com **React Three Fiber** e **Rapier Physics**, este projeto transforma a navegação web em uma exploração de um vilarejo 3D detalhado, permitindo que o usuário "ande" pelas conquistas e habilidades do desenvolvedor.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## ✨ A Experiência
 
-### Core
-- **React 19**
-- **Vite** — build rápido e moderno
-- **Three.js** — engine 3D
-- **React Three Fiber** — renderização 3D declarativa com React
+Diferente de scrolls estáticos, aqui você é o protagonista. Explore um ambiente vivo com:
 
-### Ecossistema R3F
-- **@react-three/drei**
-- **@react-three/postprocessing** — efeitos visuais (bloom)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8ea3b1f6-126a-410d-96c2-93a2bf58a109" width="100%" alt="Preview do Vilarejo 3D" />
+</div>
 
-### Física
-- **@react-three/rapier**
-- **@dimforge/rapier3d-compat**  
-  Utilizado para colisões, gravidade e movimentação física do personagem no mundo 3D.
-
-### Extras
-- **detect-gpu** — detecção de capacidade gráfica para adaptar qualidade
-- **react-router-dom** — navegação entre seções do portfolio
-- **react-joystick-component** — suporte a joystick virtual (mobile)
-- **@types/three** — tipagem para melhor DX
+- **🕹️ Personagem em 3D**: Controle total em 3ª pessoa com animações fluidas.
+- **🏡 Exploração Temática**: Áreas distintas para **Projetos**, **Sobre Mim** e **Contato**, integradas organicamente ao mapa.
+- **🌿 Ambiente Dinâmico**: Grama interativa, rochas detalhadas e uma vila completa (Casas, Coreto, Torre e Praça).
+- **🌍 Física em Tempo Real**: Colisões precisas e gravidade utilizando a engine **Rapier**.
+- **📱 Suporte Multiplataforma**: Controles adaptados para Teclado (WASD) e Joystick Virtual para dispositivos móveis.
 
 ---
 
-## 📦 Dependências
+## 🛠️ Stack Tecnológica
 
-```json
-{
-  "@dimforge/rapier3d-compat": "^0.19.3",
-  "@react-three/drei": "^10.7.7",
-  "@react-three/fiber": "^9.5.0",
-  "@react-three/postprocessing": "^3.0.4",
-  "@react-three/rapier": "^2.2.0",
-  "@types/three": "^0.182.0",
-  "detect-gpu": "^5.0.70",
-  "react": "^19.2.0",
-  "react-dom": "^19.2.0",
-  "react-joystick-component": "^6.2.1",
-  "react-router-dom": "^7.12.0",
-  "three": "^0.180.0"
-}
-
-```
-## 🛠️ Como Rodar Localmente
-
-### Pré-requisitos
-
-- Node.js **18+**
-- Git
+| Camada | Tecnologia | Propósito |
+| :--- | :--- | :--- |
+| **Core** | `React 19` | UI Reativa e Componentização |
+| **3D Engine** | `Three.js` + `R3F` | Renderização e cena 3D |
+| **Física** | `Rapier 3D` | Colisões e locomoção |
+| **Efeitos** | `Postprocessing` | Bloom, Oclusão Ambiental e Profundidade |
+| **Build** | `Vite` | Tooling de alto desempenho |
 
 ---
 
-### Passo 1 — Clonar o repositório
+## 🚀 Otimização e Performance
 
-```bash
-git clone https://github.com/Kawasanchezz/Portfolio3d.git
+O projeto foi construído pensando em acessibilidade de hardware:
 
-cd portfolio3d
-
-```
-
-### Passo 2 — Instalar as dependências
-
-```
-npm install
-```
-
-### Passo 3 — Rodar em ambiente de desenvolvimento
-
-```
-npm run dev
-```
-
-### Passo 4 — Acessar no navegador
-
-```
-http://localhost:5173
-```
+- **GPU Intelligence**: Utiliza `detect-gpu` para ajustar a qualidade gráfica automaticamente de acordo com o hardware do usuário.
+- **Lazy Loading**: Assets pesados (.GLB) são carregados sob demanda e gerenciados via **React Suspense**.
+- **Asset Preloading**: Modelos críticos são pré-carregados para evitar "pop-ins" durante a exploração.
 
 ---
 
-## 🛡️ Segurança (Hardening)
+## 🛡️ Segurança e Robustez
 
-Este projeto foi auditado e fortalecido seguindo as melhores práticas de segurança web:
-- **Content Security Policy (CSP)** via meta tag para prevenir XSS.
-- **Auditoria de dependências** limpa (0 vulnerabilidades no `npm audit`).
-- **Links externos seguros** com `rel="noopener noreferrer"`.
-- **Prevenção de exposição de arquivos** via `.gitignore` otimizado.
+Seguindo padrões de nível industrial, a aplicação conta com:
+
+- **Content Security Policy (CSP)**: Proteção rigorosa contra ataques XSS e injeção de scripts maliciosos.
+- **Sanitização de Dados**: Implementação de `DOMPurify` e `XSS` para tratar qualquer entrada ou renderização de texto externa.
+- **Hardened Links**: Todos os redirecionamentos utilizam `rel="noopener noreferrer"`.
+- **Zero Vulns**: Monitoramento constante via `npm audit` para manter 0 vulnerabilidades.
+
+---
+
+## 📂 Como Explorar Localmente
+
+Certifique-se de ter o **Node.js 18+** instalado em sua máquina.
+
+1. **Obtenha o código**
+   ```bash
+   git clone https://github.com/Kawasanchezz/Portfolio3d.git
+   cd portfolio3d
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+   > Acesse `http://localhost:5173` para entrar no vilarejo.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
+
+---
+
+<div align="center">
+  Desenvolvido com ☕ e 💻 por <b>Kawasanchezz</b>
+</div>
