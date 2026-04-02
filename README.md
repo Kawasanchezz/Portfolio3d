@@ -71,7 +71,7 @@ O objetivo é unir **web moderna + gráficos 3D + interatividade**, criando uma 
 ### Passo 1 — Clonar o repositório
 
 ```bash
-git clone https://github.com/arturnf/portfolio3d.git
+git clone https://github.com/Kawasanchezz/Portfolio3d.git
 
 cd portfolio3d
 
@@ -94,3 +94,13 @@ npm run dev
 ```
 http://localhost:5173
 ```
+
+---
+
+## 🛡️ Segurança (Hardening)
+
+Este projeto foi auditado e fortalecido seguindo as melhores práticas de segurança web:
+- **Content Security Policy (CSP)** via meta tag para prevenir XSS.
+- **Auditoria de dependências** limpa (0 vulnerabilidades no `npm audit`).
+- **Links externos seguros** com `rel="noopener noreferrer"`.
+- **Prevenção de exposição de arquivos** via `.gitignore` otimizado.

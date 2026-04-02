@@ -29,11 +29,11 @@ export function LojaDeOculos() {
           </div>
 
           <div className="acoes">
-            <a href="https://lojalisboa.com.br/" target="_blank" className="btn-demo">
+            <a href="" target="_blank" rel="noopener noreferrer" className="btn-demo">
               Ver Demo
             </a>
 
-            <a href="https://github.com/arturnf/Loja-de-oculos" target="_blank" className="btn-github">
+            <a href="" target="_blank" rel="noopener noreferrer" className="btn-github">
               GitHub
             </a>
           </div>

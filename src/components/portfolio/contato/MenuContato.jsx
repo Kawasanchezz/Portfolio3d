@@ -18,7 +18,7 @@ export function MenuContato({ fechar }) {
         <a
           href="https://github.com/Kawasanchezz"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="item-contato"
         >
           <span>github.com/Kawasanchezz</span>
@@ -27,7 +27,7 @@ export function MenuContato({ fechar }) {
         <a
           href="https://www.linkedin.com/in/kawagarcia"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="item-contato"
         >
           <span>linkedin.com/in/kawagarcia</span>

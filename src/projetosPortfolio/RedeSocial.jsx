@@ -29,11 +29,11 @@ export function RedeSocial() {
                     </div>
 
                     <div className="acoes">
-                        <a href="https://unifypic.site/login" target="_blank" className="btn-demo">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="btn-demo">
                             Ver Demo
                         </a>
 
-                        <a href="https://github.com/arturnf/rede-social" target="_blank" className="btn-github">
+                        <a href="" target="_blank" rel="noopener noreferrer" className="btn-github">
                             GitHub
                         </a>
                     </div>
